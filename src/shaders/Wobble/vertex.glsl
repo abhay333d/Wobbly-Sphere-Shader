@@ -10,6 +10,8 @@ uniform float uWarpStrength;
 
 attribute vec4 tangent;
 
+varying float vWobble;
+
 #include ../includes/simplexNoise4d.glsl
 
 float getWobble(vec3 position){
@@ -44,4 +46,7 @@ void main(){
     vec3 toA = normalize(positionA - csm_Position);
     vec3 toB = normalize(positionB - csm_Position);
     csm_Normal = cross(toA, toB);
+
+    //varyimgs
+    vWobble = wobble / uStrength;
 }
