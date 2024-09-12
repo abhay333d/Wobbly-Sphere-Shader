@@ -5,8 +5,8 @@ import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js";
 import { DRACOLoader } from "three/addons/loaders/DRACOLoader.js";
 import CustomShaderMaterial from "three-custom-shader-material/vanilla";
 import GUI from "lil-gui";
-import wobbleVertexShader from "./shaders/Wobble/vertex.glsl";
-import wobbleFragmentShader from "./shaders/Wobble/fragment.glsl";
+import wobbleVertexShader from "./shaders/wobble/vertex.glsl";
+import wobbleFragmentShader from "./shaders/wobble/fragment.glsl";
 
 /**
  * Base
