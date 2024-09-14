@@ -82,7 +82,7 @@ const material = new CustomShaderMaterial({
 const depthMaterial = new CustomShaderMaterial({
   //CSM
   baseMaterial: THREE.MeshDepthMaterial,
-  vertexShader: wobbleVertexShader,
+  vertexShader: vertexShaderSource,
   uniforms: uniforms,
   silent: true,
 
