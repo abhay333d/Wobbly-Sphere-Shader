@@ -6,7 +6,7 @@ import { DRACOLoader } from "three/addons/loaders/DRACOLoader.js";
 import { mergeVertices } from "three/examples/jsm/utils/BufferGeometryUtils.js";
 import CustomShaderMaterial from "three-custom-shader-material/vanilla";
 import GUI from "lil-gui";
-import wobbleVertexShader from "./shaders/wobble/vertex.glsl";
+import vertexShaderSource from "./shaders/wobble/vertex.glsl";
 import wobbleFragmentShader from "./shaders/wobble/fragment.glsl";
 
 /**
@@ -63,7 +63,7 @@ const uniforms = {
 const material = new CustomShaderMaterial({
   //CSM
   baseMaterial: THREE.MeshPhysicalMaterial,
-  vertexShader: wobbleVertexShader,
+  vertexShader: vertexShaderSource,
   fragmentShader: wobbleFragmentShader,
   uniforms: uniforms,
   silent: true,
